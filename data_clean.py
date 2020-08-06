@@ -116,7 +116,7 @@ data = []
 for dist_ind in range(1,339):
     for age_ind in range(1,17):
         for sex_ind in range(1, 3):
-            entry = dict({'age': age_ind, 'gender': sex_ind,'district': dist_ind})
+            entry = dict({'District': dist_ind, 'Age': age_ind, 'Sex': sex_ind})
             data.append(entry)
 
 poststratPrelim = pd.DataFrame(data)
